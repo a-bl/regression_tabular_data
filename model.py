@@ -8,18 +8,14 @@ from keras.callbacks import ModelCheckpoint
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Flatten
 from keras.metrics import RootMeanSquaredError
-from sklearn.neighbors import KNeighborsRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import StandardScaler
 from matplotlib import pyplot as plt
 import warnings
 
 warnings.filterwarnings('ignore')
 warnings.filterwarnings('ignore', category=DeprecationWarning)
-from xgboost import XGBRegressor
 
 
 def get_data():
